@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ma's Academic Profile</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            color: #333;
+            background-color: #f0f8ff; /* 淡蓝色背景 */
+            margin: 0;
+            padding: 0;
+            font-size: 18px; /* 默认字体大小 */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #4682b4; /* 深蓝色标题 */
+        }
+        h1 {
+            font-size: 46px; /* 一级标题字体大小 */
+        }
+        h2 {
+            font-size: 38px; /* 二级标题字体大小 */
+        }
+        h3 {
+            font-size: 30px; /* 三级标题字体大小 */
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 26px; /* 正文字体大小 */
+        }
+        .abstract-graph {
+            margin-bottom: 20px;
+        }
+        .abstract-graph img {
+            width: 70%;
+            height: auto;
+            margin-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .abstract-graph img.enlarged {
+            width: 100%;
+            transform: scale(1.5);
+        }
+        .qr-code {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .qr-code img {
+            width: 150px;
+            height: 150px;
+        }
+        .life-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .life-section a {
+            text-decoration: none;
+            color: #4682b4;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dr. Ma's Academic Profile</h1>
+
+        <div class="profile">
+            <img src="isa.jpg" alt="Dr. Ma" width="150">
+            <div>
+                <h2>Dr. Ma</h2>
+                <p>Major: Mechanical Engineering</p>
+                <p>Focus on: Online monitoring and feedback control for industrial manufacturing, especially for Laser Powder Bed Fusion.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p>*** University, *** Major</p>
+            <p>Supervisor: ***</p>
+        </div>
+
+        <div class="section">
+            <h2>Patents</h2>
+            <p>List your patents here.</p>
+        </div>
+
+        <div class="section">
+            <h2>Research Overview</h2>
+            <p>这里可以展示您的学术研究概况，使用简洁的语言概述您的研究领域和成就。</p>
+        </div>
+
+        <div class="section">
+            <h2>Research Results</h2>
+
+            <div class="abstract-graph">
+                <h3>1. Research Title 1</h3>
+                <p>Main content or findings of the research 1.</p>
+                <img src="isa.png" alt="Graph 1" onclick="toggleEnlarge(this)" style="width: 40%;">
+            </div>
+
+            <div class="abstract-graph">
+                <h3>2. Research Title 2</h3>
+                <p>Main content or findings of the research 2.</p>
+                <img src="ra.png" alt="Graph 2" onclick="toggleEnlarge(this)" style="width: 40%;">
+            </div>
+
+            <div class="abstract-graph">
+                <h3>3. Research Title 3</h3>
+                <p>Main content or findings of the research 3.</p>
+                <img src="3d.png" alt="Graph 3" onclick="toggleEnlarge(this)" style="width: 50%;">
+            </div>
+
+            <div class="abstract-graph">
+                <h3>4. Research Title 4</h3>
+                <p>Main content or findings of the research 4.</p>
+                <img src="graph4.png" alt="Graph 4" onclick="toggleEnlarge(this)" style="width: 65%;">
+            </div>
+
+            <div class="abstract-graph">
+                <h3>5. Research Title 5</h3>
+                <p>Main content or findings of the research 5.</p>
+                <img src="graph5.png" alt="Graph 5" onclick="toggleEnlarge(this)" style="width: 80%;">
+            </div>
+        </div>
+
+        <div class="qr-code">
+            <h3>Scan QR Code to Visit This Page</h3>
+            <img src="qrcode.png" alt="QR Code">
+        </div>
+
+        <div class="life-section">
+            <a href="life.html">生活</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleEnlarge(img) {
+            img.classList.toggle('enlarged');
+        }
+    </script>
+</body>
+</html>
